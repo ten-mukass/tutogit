@@ -7,6 +7,11 @@ p{
     text-align: justify;
 }
 
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
 
 /* BARRE DE NAVIGATION */
 
@@ -232,4 +237,77 @@ p{
     }
 }
 
+
+/* QUI SOMMES NOUS */
+
+.about{
+    padding-top: 100px;
+}
+
+.about h1{
+    text-align: center;
+}
+
+.block1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.block2{
+    display: flex;
+    align-items: center;
+}
+
+.about1{
+    padding-top: 40px;
+}
+
+.block4{
+    background-color: rgb(26, 54, 93);
+    color: #fff;
+}
+
+.block3{
+    display: flex;
+    align-items: center;
+}
+
+
+.Franck{
+    padding-top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: url(images/Frank.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: black 2px solid;
+    margin: auto;
+}
+
+.Gilson{
+    padding-top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: url(images/Gilson.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: black 2px solid;
+    margin: auto;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.card{
+    margin: 20px;
+}
+
+.bureau{
+    justify-content: center;
+}
 
