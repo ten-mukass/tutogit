@@ -1,8 +1,66 @@
-*{
-    background-color: brown;
+
+p{
+    font-size: 20px;
+    text-align: justify;
 }
 
-h1, p{
-    color: #fff;
+
+/* INFON ACCUEIL */
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.hero .btn{
+    background-color: yellow;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .hero .btn{
+        background-color: red;
+        width: 200px;
+    }
+}
+
+.hero a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1vw;
+}
+    
+
+
+/* FIN INFON ACCUEIL */
+
+/* ACTUALITE */
+
+.actualite{
+    padding-top: 70px;
+}
+
+.row .image-titre1{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.row .image-titre1 img{
+    width: 120%;
+    box-shadow: 1px 1px 1px #333;
+    border-radius: 10px;
+}
+
+
