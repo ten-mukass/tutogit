@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laforetdesabeilles</title>
+
+    <!-- lien JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS BOOSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JAVA SCRIPT BOOSTRAP -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- LES STYLES -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRE DE NAVIGATION -->
+
+    <!-- NAVBARRE -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/logoficil.png" alt="logo" style="width: 120px;">
+            </a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="projet.html">Projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="don.html">Faire un don</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FIN DE BARRE DE NAVIGATION -->
+
+    <!-- PROJET -->
+
+    <div class="container All-projet">
+        <h1>LA SEMAINE DE LA SCIENCE</h1>
+        <hr style="height: 8px;">
+        <p>
+            Chaque 10 novembre, l'ONU organise la Journée Mondiale de la Science au service de la paix et du
+            développement. C'est l'occasion de présenter des technologies nouvelles qui oeuvrent au développement des
+            pays (notamment ceux en voie de développement). Dans le même esprit, la Forêt des Abeilles a imaginé toute
+            une semaine durant laquelle des acteurs gabonais des nouvelles technologies exerçant au Gabon ou à
+            l'étranger présenteraient aux jeunes des lycées et collèges leurs métiers au travers de travaux pratiques
+            (TPs). Ces TPs auront pour but d'illustrer les phénomènes scientifiques derrière les technologies qui nous
+            entourent. Le projet a été pensé pour susciter des vocations et de l'intérêt pour les branches de formation
+            qui permettent d'exercer ces métiers.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row projet">
+            <div id="carouselExampleIndicators" class="carousel slide col-md-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/gif.png" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(26, 54, 93);">
+                            <h5 style="text-align: center;">Robotique industrielle et cobotique</h5>
+                            <p style="text-align: center;">Proposé par : Franck MATANGOYE</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/realité.png" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(26, 54, 93);">
+                            <h5 style="text-align: center;">Réalité augmentéé & Réalité virtuelle</h5>
+                            <p style="text-align: center;">Proposé par : Franck MATANGOYE</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/web.png" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(26, 54, 93);">
+                            <h5 style="text-align: center;">Codage informatique</h5>
+                            <p style="text-align: center;">Proposé par : Steeven's MAISSA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/food.png" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(26, 54, 93);">
+                            <h5 style="text-align: center;">Traitement des solides divisés</h5>
+                            <p style="text-align: center;">Proposé par : Vianney MAKAYA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/eau.png" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(26, 54, 93);">
+                            <h5 style="text-align: center;">Traitement des eaux</h5>
+                            <p style="text-align: center;">Proposé par : Therneeskens MBINA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/energie.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: rgb(26, 54, 93);">
+                            <h5 style="text-align: center;">Energie renouvelable</h5>
+                            <p style="text-align: center;">Proposé par : Gilson MAMBU</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="col-md-7">
+                <div class="tp">
+                    <h3>
+                        <span style="text-decoration-line: underline;">TP1 :</span> Robotique industrielle et cobotique
+                    </h3>
+                    <p>
+                        L'objectif premier de ce TP est de démonter les préjugés que peuvent avoir nos jeunes concernant
+                        l'utilisation, la conception ou tout simplement l'accès au monde de la robotique que la culture
+                        populaire associe très souvent à la science-fiction.
+                    </p>
+                </div>
+                <div class="tp">
+                    <h3>
+                        <span style="text-decoration-line: underline;">TP2 :</span> Réalité augmentéé & Réalité
+                        virtuelle
+                    </h3>
+                    <p>
+                        Maintenance préventive et prédictive des installations industrielles, maintenance à distance,
+                        réunion virtuelle, présentation des conceptions mécaniques ou BTP sont les secteurs qui
+                        utilisent aujourd'hui la VR/AR. Rare secteur où l'Afrique côtoie les puissances créatives
+                        mondiales, la VR/AR est un réel gisement de métiers pour la jeunesse gabonaise.
+                    </p>
+                </div>
+                <div class="tp">
+                    <h3>
+                        <span style="text-decoration-line: underline;">TP3 :</span> Codage informatique
+                    </h3>
+                    <p>
+                        Le monde d'hier était câblé mais celui de demain sera totalement numérique. Il est donc
+                        primordial de susciter davantage de vocation et d'investir massivement dans ce domaine d'avenir
+                        qui dicte déjà la conduite de notre société.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 40px;">
+        <div class="row">
+            <div class="tp col-md-6">
+                <h3>
+                    <span style="text-decoration-line: underline;">TP4 :</span>Traitement des solides divisés
+                </h3>
+                <p>
+                    Dans l'industrie, les solides divisés occupent une place importante à tel point qu'on les
+                    retrouve presque dans tous les domaines, dans l'agroalimentaire, la pharmaceutique, la
+                    cosmétique... L'objectif de ce TP est de fournir les éléments théoriques et technologiques de
+                    base sur la préparation et la manipulation des poudres, la caractérisation ainsi que les
+                    techniques de mise en oeuvre.
+                </p>
+            </div>
+            <div class="tp col-md-6">
+                <h3>
+                    <span style="text-decoration-line: underline;">TP5 :</span>Traitement des eaux
+                </h3>
+                <p>
+                    Les métiers de traitement des eaux jouent plusieurs rôles essentiels pour l'homme et son
+                    environnement. Le travail conduit par ces Travaux Pratiques porte sur la décantation et la
+                    filtration des eaux qui sont deux classiques des stations de traitement des eaux et quelques
+                    petites autres analyses. Nous montrerons aux participants les différents circuits et
+                    technologies qui peuvent exister dans une station. L'objectif est de susciter la curiosité et la
+                    vocation en manipulant.
+                </p>
+            </div>
+        </div>
+        <div class="tp" style="padding-top: 40px;">
+            <h3>
+                <span style="text-decoration-line: underline;">TP6 :</span>Énergies renouvelables - cas de
+                l'énergie solaire
+            </h3>
+            <p>
+                Une énergie est dite renouvelable lorsqu'elle provient de sources que la nature renouvelle en
+                permanence, par opposition à une énergie non renouvelable dont les stocks s'épuisent. L'intérêt
+                pour les jeunes est de découvrir par l'expérimentation le déroulement physique derrière
+                l'obtention de l'électricité par les rayons solaires. Ils découvriront tout le processus :
+                captation des rayons solaires, transformation en énergie électrique, stockage de l'énergie…
+            </p>
+        </div>
+    </div>
+
+
+    <!-- conférences -->
+
+    <div class="container">
+        <div class="conf">
+            <h1>DES CONFERENCES</h1>
+            <hr style="height: 8px;">
+            <h3 style="padding-top: 30px;">Voici quelques thématiques qui seront abordées</h3>
+            <p class="conf-p">
+                - L'apport des nouvelles technologies dans les entreprises gabonaises <br>
+                - La place de la formulation dans l'agroalimentaire au Gabon <br>
+                - La valorisation de déchets ménagers <br>
+                - Le respect de l'environnement : un moyen d'accroitre nos rendements
+            </p>
+        </div>
+    </div>
+
+
+    <!-- aide scolaires -->
+
+    <div class="container-fluid school">
+        <div class="container">
+            <h1 style="color: #fff;">AIDE SCOLAIRES</h1>
+            <hr style="height: 8px;">
+            <div class="row">
+                <div class="col-md-3 school1">
+                    <div class="col-sco">
+                        <p>COURS DE SOUTIENS</p>
+                        <div class="img-sco">
+                            <img src="images/icone-cours.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 school1">
+                    <div class="col-sco">
+                        <p>STAGE SCOLAIRE</p>
+                        <div class="img-sco">
+                            <img src="images/icone-stage.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 school1">
+                    <div class="col-sco">
+                        <p>DOCUMENTATION</p>
+                        <div class="img-sco">
+                            <img src="images//icone-doc.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 school1">
+                    <div class="col-sco">
+                        <p>PARRAINAGE</p>
+                        <div class="img-sco">
+                            <img src="images/parrainage-icone.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN PROJET -->
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        &copy;2020, <span style="color: yellow;">LA FORET DES ABEILLES</span>
+
+        <br>ce site a été developper par les talents de notre association
+
+        <br> association déclarée sous la loi du 1 juillet 1901, article 5 - al 5,6 et 7 - Décret du 16 août 1901,
+        article 3
+    </footer>
+
+    <!-- FOOTER -->
+
+
+
+    <!-- LES SCRIPTS -->
+    <script src="main.js"></script>
+
+    <!-- LES SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
