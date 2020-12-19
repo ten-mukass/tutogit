@@ -3,11 +3,12 @@
 
 
 p{
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
 }
 
 h1{
+    font-size: 30px;
     text-align: center;
     padding-top: 30px;
 }
@@ -253,11 +254,15 @@ hr{
 
 .about h1{
     text-align: center;
+    padding-top: 100px;
 }
 
 .block1 img{
     width: 100%;
     border-radius: 15px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
 }
 
 .block2{
@@ -272,11 +277,43 @@ hr{
 .block4{
     background-color: rgb(26, 54, 93);
     color: #fff;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
 }
 
 .block3{
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px){
+    p{
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+    .about11{
+        display: flex;
+    }
+    .h1-ttitle{
+        padding-top: 90px;
+    }
+
+    .block1{
+        margin: auto;
+        width: 70%;
+    }
+
+    .h3{
+        padding-top: 20px;
+    }
 }
 
 /* EQUIPE */
@@ -313,10 +350,35 @@ hr{
 
 .card{
     margin: 20px;
+    width: 18rem;
 }
 
 .bureau{
     justify-content: center;
+}
+
+.adhésion-equipe{
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .h3{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .card{
+        margin: 5px;
+        width: 150px;
+        display: flex;
+        background-color: rgb(187, 184, 187);
+    }
+
+    .card-text{
+        text-align: center;
+        font-size: 7px;
+        font-weight: bold;
+    }
 }
 
 
@@ -344,9 +406,27 @@ hr{
     height: 500px;
 }
 
+.carousel{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+}
+
+.tp123{
+    align-items: center;
+}
+
+.tp-c{
+    padding-top: 30px;
+}
+
 .projet .carousel-item img{
     height: 100%;
 }
+
 
 @media (max-width: 768px){
     .projet .carousel-item{
@@ -376,7 +456,7 @@ hr{
 
 .school1 img{
     width: 100%;
-    height: 100%;
+
 }
 
 .school1 p{
@@ -388,4 +468,96 @@ hr{
 .col-sco{
     background-color: #fff;
     border-radius: 15px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .img-sco{
+        width: 100px;
+        height: 110px;
+        margin: auto;
+    }
+
+    .school1{
+        margin: auto;
+        padding-top: 40px;
+        width: 150px;
+    }
+}
+
+
+/* FORMULAIRE ADHESION */
+
+.formulaire{
+    background-color: blueviolet;
+}
+
+.zone{
+    background-color: yellow;
+    padding-bottom: 20px;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+}
+
+/* CONTACT */
+
+.num-email p{
+    font-size: 25px;
+    color: thistle;
+    text-align: center;
+}
+
+.contact-us{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.f-image{
+    padding-top: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/feuille.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.zone-message{
+    background-color: #ffff0069;
+    border-radius: 15px;
+    padding-bottom: 8px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width :768px){
+    .num-email p{
+        font-size: 15px;
+        color: thistle;
+        text-align: center;
+    }
+}
+
+/* FAIRE UN DON */
+
+.donation{
+    padding-top: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/donnation.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.don{
+    color: #fff;
 }
