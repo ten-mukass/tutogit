@@ -76,16 +76,16 @@
                 </div>
 
                 <div class="col-md-6 zone">
-                    <form action="">
+                    <form action="adherent.php" method="POST">
                         <div class="container">
                             <div class="row">
                                 <div class="col-1">
                                     <div class="">
                                         <label for="floatingSelectGrid">Civilité</label>
-                                        <select class="form-select" id="floatingSelectGrid"
+                                        <select name="civilité" class="form-select" id="floatingSelectGrid"
                                             aria-label="Floating label select example">
-                                            <option value="1">M</option>
-                                            <option value="2">F</option>
+                                            <option value="Monsieur">M.</option>
+                                            <option value="Madame">Mme</option>
                                         </select>
                                     </div>
                                 </div>
@@ -94,20 +94,22 @@
                                     <div class="col-md-4">
                                         <label for="floatingInputGrid">nom*</label>
                                         <div class="">
-                                            <input type="text" class="form-control" id="floatingInputGrid"
+                                            <input name="nom" type="text" class="form-control" id="floatingInputGrid"
                                                 placeholder="" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <label for="floatingInputGrid">prénom*</label>
                                         <div class="">
-                                            <input type="text" class="form-control" id="floatingInputGrid" required>
+                                            <input name="prenom" type="text" class="form-control" id="floatingInputGrid"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <label for="floatingInputGrid">date de naissance*</label>
                                         <div class="">
-                                            <input type="date" class="form-control" id="floatingInputGrid" required>
+                                            <input name="date" type="date" class="form-control" id="floatingInputGrid"
+                                                required>
                                         </div>
                                     </div>
                                 </div>
@@ -116,30 +118,30 @@
                                     <div class="col-md-6">
                                         <label for="floatingInputGrid">Pays</label>
                                         <div class="">
-                                            <input type="text" class="form-control" id="floatingInputGrid"
+                                            <input name="Pays" type="text" class="form-control" id="floatingInputGrid"
                                                 placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="floatingInputGrid">Ville</label>
                                         <div class="">
-                                            <input type="text" class="form-control" id="floatingInputGrid">
+                                            <input name="ville" type="text" class="form-control" id="floatingInputGrid">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <h3 style="font-size: 18px;padding-top: 20px;">Contact</h3>
                                     <div class="col-md-6">
-                                        <label for="floatingInputGrid">emal*</label>
+                                        <label for="floatingInputGrid">email*</label>
                                         <div class="">
-                                            <input type="email" class="form-control" id="floatingInputGrid"
+                                            <input name="email" type="email" class="form-control" id="floatingInputGrid"
                                                 placeholder="" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="floatingInputGrid">Tel</label>
                                         <div class="">
-                                            <input type="tel" class="form-control" id="floatingInputGrid">
+                                            <input name="tel" type="tel" class="form-control" id="floatingInputGrid">
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +150,8 @@
                                     <div class="col-md-12">
                                         <label for="floatingInputGrid">Profession</label>
                                         <div class="">
-                                            <input type="text" class="form-control" id="floatingInputGrid"
+                                            <input name="profession" type="text" class="form-control"
+                                                id="floatingInputGrid"
                                                 placeholder="Exp: Artisan, Ingénieur de production, Autoentrepreneur">
                                         </div>
                                     </div>
@@ -189,7 +192,7 @@
                                     </div>
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                            <button name="ok" type="submit" class="btn btn-primary">Envoyer</button>
                         </div>
                     </form>
                 </div>
