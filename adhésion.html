@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laforetdesabeilles</title>
+
+    <!-- lien JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS BOOSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JAVA SCRIPT BOOSTRAP -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- LES STYLES -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRE DE NAVIGATION -->
+
+    <!-- NAVBARRE -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/la foret des abeilles logo.svg" alt="logo"
+                    style="width: 120px;">
+            </a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projet.html">Projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="don.html">Faire un don</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="adhésion.html">Nous rejoindre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FIN DE BARRE DE NAVIGATION -->
+
+
+    <!-- FORMULAIRE -->
+
+    <div class="container-fluid formulaire">
+        <div class="container " style="padding-top: 120px; padding-bottom: 50px;">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>POURQUOI NOUS REJOINDRE</h4>
+                </div>
+
+                <div class="col-md-6 zone">
+                    <form action="membre.php" method="POST">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="">
+                                        <label for="floatingSelectGrid">Civilité</label>
+                                        <select name="civilité" class="form-select" id="floatingSelectGrid"
+                                            aria-label="Floating label select example">
+                                            <option value="Monsieur">M.</option>
+                                            <option value="Madame">Mme</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h3 style="font-size: 18px;padding-top: 20px;">Indentité</h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="floatingInputGrid">nom*</label>
+                                        <div class="">
+                                            <input name="nom" type="text" class="form-control" id="floatingInputGrid"
+                                                placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="floatingInputGrid">prénom*</label>
+                                        <div class="">
+                                            <input name="prenom" type="text" class="form-control" id="floatingInputGrid"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="floatingInputGrid">date de naissance*</label>
+                                        <div class="">
+                                            <input name="date" type="date" class="form-control" id="floatingInputGrid"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h3 style="font-size: 18px;padding-top: 20px;">Lieu de résidence</h3>
+                                    <div class="col-md-6">
+                                        <label for="floatingInputGrid">Pays</label>
+                                        <div class="">
+                                            <input name="Pays" type="text" class="form-control" id="floatingInputGrid"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="floatingInputGrid">Ville</label>
+                                        <div class="">
+                                            <input name="ville" type="text" class="form-control" id="floatingInputGrid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h3 style="font-size: 18px;padding-top: 20px;">Contact</h3>
+                                    <div class="col-md-6">
+                                        <label for="floatingInputGrid">email*</label>
+                                        <div class="">
+                                            <input name="email" type="email" class="form-control" id="floatingInputGrid"
+                                                placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="floatingInputGrid">Tel</label>
+                                        <div class="">
+                                            <input name="tel" type="tel" class="form-control" id="floatingInputGrid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h3 style="font-size: 18px; padding-top: 20px;">Situation professionnelle</h3>
+                                    <div class="col-md-12">
+                                        <label for="floatingInputGrid">Profession</label>
+                                        <div class="">
+                                            <input name="profession" type="text" class="form-control"
+                                                id="floatingInputGrid"
+                                                placeholder="Exp: Artisan, Ingénieur de production, Autoentrepreneur">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check" style="padding-top: 20px;">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Statut et RI
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 style="color: blue;" class="modal-title" id="exampleModalLabel">
+                                                        Statut de LA FORET
+                                                        DES
+                                                        ABEILLES
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <a
+                                                        href="https://drive.google.com/file/d/1dZa3SLWVKP2eMI9oTm70m8cOQWVnJ4sm/view?usp=sharing">Lire
+                                                        le RI</a>
+                                                    <a
+                                                        href="https://drive.google.com/file/d/1XTfp0fKgKNPU0OJwIDiTNEq9_xyA6DlN/view?usp=sharing">Lire
+                                                        les statuts</a>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Fermer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <button name="ok" type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN DE FORMULAIRE -->
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        &copy;2020, <span style="color: yellow;">LA FORET DES ABEILLES</span>
+
+        <br>Association à but non lucratif (loi 1901)
+
+        <br> Ce site a été développé par les talents de l'association
+    </footer>
+
+    <!-- FOOTER -->
+
+
+
+    <!-- LES SCRIPTS -->
+    <script src="main.js"></script>
+
+    <!-- LES SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
